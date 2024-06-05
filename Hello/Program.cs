@@ -1,7 +1,13 @@
-﻿//а вы смотрите код?)))
+﻿Console.Write("Введите свое имя: ");
 
-string strinNumber = "256";
-int numberFromString = Convert.ToInt32(strinNumber);
-int square = numberFromString * numberFromString;
+string name = Console.ReadLine();
 
-Console.WriteLine("Квадрат введенного числа равен " + square);
+Console.WriteLine();
+
+Console.Write("Введите свой возраст: ");
+
+string age = Console.ReadLine();
+
+Console.WriteLine();
+
+Console.Write($"Благодарим, {name} {age}, за введенную информацию! Очень важный спам будет отправляться вам на почту!");
