@@ -1,13 +1,17 @@
-﻿// byte a = -99;
-// short b = 55555;
-// int c = 2394672295;
-// float d = 65.46;
-// string e = 'a';
-// char f = "World";
+﻿int a = 4 + 6;
+int b = 4 - 1;
+int c = 3 * 7;
+int d = 16 / 8;
+double e = 11.0 / 5;
+int f = 13 / 3;
+int g = 17 % 8;
 
-int a = -99;
-float b = 55555;
-long c = 2394672295;
-double d = 65.46;
-char e = 'a';
-string f = "World";
+
+
+Console.WriteLine("4 плюс 6 = " + a);
+Console.WriteLine("4 уменьшенное на 1 = " + b);
+Console.WriteLine("3 умножить на 7 = " + c);
+Console.WriteLine("16 разделить на 8 = " + d);
+Console.WriteLine("11 разделить на 5 = " + e);
+Console.WriteLine("Целая часть от деления 13 на 3 = " + f);
+Console.WriteLine("Остаток от деления 17 на 8 = " + g);
