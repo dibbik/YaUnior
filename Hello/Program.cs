@@ -1,13 +1,17 @@
-﻿Console.Write("Введите свое имя: ");
+﻿int magicNumber = 4;
 
-string name = Console.ReadLine();
-
+Console.WriteLine("Угадай число!");
 Console.WriteLine();
-
-Console.Write("Введите свой возраст: ");
-
-string age = Console.ReadLine();
-
+Console.WriteLine("Загадо число от 1 до 5. Попробуйте его угадать!");
 Console.WriteLine();
+Console.Write("Введите ваше число: ");
 
-Console.Write($"Благодарим, {name} {age}, за введенную информацию! Очень важный спам будет отправляться вам на почту!");
+int input = Convert.ToInt32(Console.ReadLine());
+
+if (input == magicNumber)
+
+    Console.WriteLine($"Да! Это число {magicNumber}!");
+
+else
+    Console.WriteLine($"Нет! Это не {input}!");
+    
