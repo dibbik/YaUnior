@@ -1,17 +1,27 @@
-﻿int magicNumber = 4;
+﻿bool[] thimble = new bool[3] {false, false, true};
 
-Console.WriteLine("Угадай число!");
+Console.WriteLine("Игра в наперстки");
 Console.WriteLine();
-Console.WriteLine("Загадо число от 1 до 5. Попробуйте его угадать!");
+
+Console.WriteLine("Под одним из трёх наперстков находится шарик. Попробуйте угадать в каком!");
 Console.WriteLine();
-Console.Write("Введите ваше число: ");
+
+Console.Write("Попробуте угадать в каком!");
+Console.WriteLine();
+
+Console.Write("Введите ваше число от 1 до 3: ");
 
 int input = Convert.ToInt32(Console.ReadLine());
 
-if (input == magicNumber)
+bool result = false;
 
-    Console.WriteLine($"Да! Это число {magicNumber}!");
-
-else
-    Console.WriteLine($"Нет! Это не {input}!");
-    
+if (input == 1 || input==2)
+{
+    result = thimble[0];
+    Console.WriteLine("нет! не верно");
+}
+if (input == 3)
+{
+     result = thimble[2];
+    Console.WriteLine("Вы угдали");
+}
